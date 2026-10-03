@@ -1,1 +1,5 @@
-{"id": "browser-tab"}
+{
+  "id": "browser-tab",
+  "requirements": { "paseo": ">=0.10.2 <0.11.0" },
+  "build": [["npm", "ci", "--omit=dev"]]
+}

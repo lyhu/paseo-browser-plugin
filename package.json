@@ -1,22 +1,33 @@
 {
   "name": "browser-tab",
   "private": true,
-  "version": "0.0.0",
+  "type": "module",
+  "version": "0.1.0",
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:integration": "tsx tests/integration.ts"
   },
   "devDependencies": {
-    "@getpaseo/client": "^0.4.0",
+    "@getpaseo/client": "0.10.3",
+    "@getpaseo/plugin": "0.10.3",
+    "@getpaseo/protocol": "0.10.3",
     "@tanstack/react-query": "^5.90.11",
-    "@types/react": "~19.2.0",
-    "@types/ws": "^8.18.1",
+    "@types/node": "^24.0.0",
+    "@types/react": "~19.1.0",
+    "@types/ws": "^8.18.2",
     "react": "19.1.0",
     "react-native": "0.81.5",
+    "tsx": "^4.20.0",
     "typescript": "^5.9.3",
+    "ws": "^8.22.0",
     "zod": "^4.4.3"
   },
   "dependencies": {
-    "playwright": "^1.63.0",
-    "ws": "^8.21.3"
+    "mitt": "^3.0.1",
+    "parsel-js": "^1.2.3",
+    "puppeteer-core": "^25.12.0",
+    "rxjs": "^7.8.2",
+    "urlpattern-polyfill": "^10.1.0"
   }
 }
